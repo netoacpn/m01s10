@@ -22,7 +22,7 @@ function FormularioNovoMedicamento(){
         <input type="text" placeholder="Nome do Laboratório" value={laboratorio} onChange={(e) => setLaboratorio(e.target.value)}/>
         <label>Preço do Medicamento</label>
         <input type="number" placeholder="Preço do produto" value={preco} onChange={(e) => setPreco(e.target.value)}/>    
-        <button type="submit">Adicionar Novo Medicamento</button>
+        <button type="submit">Cadastrar</button>
       </form>
     </>
   )
