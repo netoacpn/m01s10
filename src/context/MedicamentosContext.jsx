@@ -26,8 +26,23 @@ export const MedicamentosContextProvider = ({children}) => {
     console.log(novaLista)
   }
 
+  const FavoritarMedicamento = (id) => {
+    const lista = listaMedicamentos.map(item =>{
+      if(item.id == id){
+        item.favorito = !item.favorito
+      }
+
+      return item
+
+    })
+
+    
+
+    setListaMedicamentos(lista)
+  }
+
   return(
-    <MedicamentosContext.Provider value={{listaMedicamentos, AdicionarMedicamento}}>
+    <MedicamentosContext.Provider value={{listaMedicamentos, AdicionarMedicamento, FavoritarMedicamento}}>
       {children}
     </MedicamentosContext.Provider>  
   )

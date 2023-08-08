@@ -13,6 +13,9 @@ function FormularioNovoMedicamento(){
     e.preventDefault()
 
     AdicionarMedicamento(nome, laboratorio, preco)
+    setNome("")
+    setLaboratorio("")
+    setPreco(0)
   }
 
   return(
