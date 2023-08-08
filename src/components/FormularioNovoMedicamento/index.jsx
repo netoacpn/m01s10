@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { MedicamentosContext } from "../../context/MedicamentosContext"
 
 function FormularioNovoMedicamento(){
+
+  const {AdicionarMedicamento} = useContext(MedicamentosContext)
 
   const [nome, setNome] = useState("")
   const [laboratorio, setLaboratorio] = useState("")
@@ -9,19 +12,16 @@ function FormularioNovoMedicamento(){
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    //Chamda da função de cadastro
+    AdicionarMedicamento(nome, laboratorio, preco)
   }
 
   return(
     <>
       <h2>Formulário de cadastro de medicamentos</h2>
       <form onSubmit={handleSubmit}>
-        <label>Nome do Medicamento</label>
-        <input type="text" placeholder="Digite o nome do medicamento" value={nome} onChange={(e) => setNome(e.target.value)}/>      
-        <label>Nome do Laboratório</label>        
+        <input type="text" placeholder="Digite o nome do medicamento" value={nome} onChange={(e) => setNome(e.target.value)}/>              
         <input type="text" placeholder="Nome do Laboratório" value={laboratorio} onChange={(e) => setLaboratorio(e.target.value)}/>
-        <label>Preço do Medicamento</label>
-        <input type="number" placeholder="Preço do produto" value={preco} onChange={(e) => setPreco(e.target.value)}/>    
+        <input type="number" placeholder="Preço do produto" value={preco} onChange={(e) => setPreco(Number(e.target.value))}/>    
         <button type="submit">Cadastrar</button>
       </form>
     </>

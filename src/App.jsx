@@ -9,10 +9,12 @@ import FormularioNovoMedicamento from './components/FormularioNovoMedicamento'
 function App() {
 
   return (
-    <MedicamentosContextProvider>
+    <>
       <Header></Header>
-      <FormularioNovoMedicamento />
-    </MedicamentosContextProvider>
+      <MedicamentosContextProvider>
+        <FormularioNovoMedicamento />
+      </MedicamentosContextProvider>
+    </>
   )
 }
 
