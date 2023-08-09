@@ -2,9 +2,11 @@ import './style.css'
 
 function Header(){
   return(
-    <>
-      <h2 className="header">Farmácia Z</h2>
-    </>
+    <div className="div-header">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a className="navbar-brand" href="">DevFarma</a>            
+      </nav>      
+    </div>
   )
 }
 

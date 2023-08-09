@@ -1,0 +1,29 @@
+.div-title{
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control{
+  display: flex;
+  width: 500px;
+  margin: 15px;
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+.btn{
+  display: flex;
+  width: auto;
+  margin: 15px;
+  margin-left: auto;  
+  margin-right: auto;
+}

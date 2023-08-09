@@ -36,8 +36,6 @@ export const MedicamentosContextProvider = ({children}) => {
 
     })
 
-    
-
     setListaMedicamentos(lista)
   }
 

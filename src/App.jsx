@@ -13,11 +13,13 @@ function App() {
 
   return (
     <>
-      <Header></Header>
-      <FormularioNovoMedicamento />
-        {listaMedicamentos.map(medicamento => (
-          <CardMedicamento key={medicamento.id} medicamento={medicamento} />
-      ))}
+      <Header/>
+      <FormularioNovoMedicamento />      
+        <div className="cards">
+          {listaMedicamentos.map(medicamento => (
+            <CardMedicamento key={medicamento.id} medicamento={medicamento} />
+          ))}
+        </div>        
     </>
   )
 }
