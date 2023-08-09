@@ -16,8 +16,8 @@ function CardMedicamento({medicamento}){
         <h4>Preço: R$ {medicamento.preco}</h4>
       </div> */}
       <div className="card">
-        <div className="card-button">
-          <button className="btn" type="submit" onClick={() => FavoritarMedicamento(medicamento.id)}><i className="bi bi-bookmark-heart-fill" ></i></button>
+        <div>
+          <button className="btn btn-card" type="submit" onClick={() => FavoritarMedicamento(medicamento.id)}><i className="bi bi-bookmark-heart-fill" ></i></button>
         </div>
         <img src="https://wwyhfaiwse.map.azionedge.net/Custom/Content/Themes/Shared/Imagens/tvg_m.jpg" alt="Foto caixa do remédio" className="card-img-top"/>
         <div className="card-body">

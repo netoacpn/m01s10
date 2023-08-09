@@ -1,6 +1,8 @@
-.btn{
+.btn-card{
   display: flex;
   margin-right: 0;
+  padding: 0px;
+  padding-right: 20px;
 }
 
 i{
