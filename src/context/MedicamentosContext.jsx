@@ -31,11 +31,11 @@ export const MedicamentosContextProvider = ({children}) => {
       if(item.id == id){
         item.favorito = !item.favorito
       }
-
+      console.log(item)
       return item
-
+      
     })
-
+    
     setListaMedicamentos(lista)
   }
 
